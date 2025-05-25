@@ -3,8 +3,8 @@ function makeArray(firstArray,secondArray,maxLength)
      const totalArray = firstArray.concat(secondArray);
      if(totalArray.length > maxLength)
      {
-        totalArray.length = maxLength;
-        return totalArray;
+        //  totalArray.length = maxLength;
+        return totalArray.slice(0, maxLength);;
      }
      else
      {
